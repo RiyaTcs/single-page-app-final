@@ -10,8 +10,10 @@ import router from "./router";
     client_id,
     redirect_uri,
     cacheLocation: "localstorage",
+    audience: "https://expenses-api",
+    scope: "read:reports", 
   });
-
+  
   // handle user navigation
   window.addEventListener("hashchange", router);
   window.addEventListener("load", router);
